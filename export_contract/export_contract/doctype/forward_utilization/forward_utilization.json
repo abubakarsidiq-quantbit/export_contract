@@ -1,0 +1,67 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-01-05 17:03:46.791929",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "forward_contract",
+  "forward_rate",
+  "forward_amount_outstanding",
+  "amount_utilized",
+  "pre_utilization_charges"
+ ],
+ "fields": [
+  {
+   "fieldname": "forward_contract",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Forward Contract",
+   "options": "Forward Contract"
+  },
+  {
+   "fetch_from": "forward_contract.booking_rate",
+   "fieldname": "forward_rate",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Forward Rate",
+   "precision": "2"
+  },
+  {
+   "fetch_from": "forward_contract.amount_outstanding",
+   "fieldname": "forward_amount_outstanding",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Forward Amount Outstanding",
+   "precision": "2"
+  },
+  {
+   "fetch_from": "forward_contract.amount_usd_book",
+   "fieldname": "amount_utilized",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Amount Utilized",
+   "precision": "2"
+  },
+  {
+   "fieldname": "pre_utilization_charges",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Pre Utilization Charges",
+   "precision": "2"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-03-02 14:21:00.867017",
+ "modified_by": "Administrator",
+ "module": "export_contract",
+ "name": "Forward Utilization",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

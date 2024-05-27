@@ -1,0 +1,258 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{booking_ref}",
+ "creation": "2024-01-05 16:45:19.226809",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "booking_ref",
+  "currency",
+  "amount_usd_book",
+  "current_rate",
+  "margin",
+  "premium",
+  "booking_rate",
+  "column_break_rolfy",
+  "status",
+  "booking_date",
+  "bank",
+  "maturity_from",
+  "maturity_to",
+  "days_of_premium",
+  "amount_outstanding",
+  "outstanding_inr",
+  "company",
+  "amended_from",
+  "underlying_section",
+  "forward_contract_underlying",
+  "utilization_section",
+  "utilization_payment_entries",
+  "total_utilization",
+  "cancellation_section",
+  "cancellation_date",
+  "cancellation_rate",
+  "column_break_naixy",
+  "cancellation_amount",
+  "bank_account",
+  "add_cancellation_details",
+  "section_break_w97lx",
+  "cancellation_details",
+  "total_cancelled"
+ ],
+ "fields": [
+  {
+   "fieldname": "booking_ref",
+   "fieldtype": "Data",
+   "label": "Booking Ref"
+  },
+  {
+   "fieldname": "currency",
+   "fieldtype": "Link",
+   "label": "Currency",
+   "options": "Currency"
+  },
+  {
+   "fieldname": "amount_usd_book",
+   "fieldtype": "Float",
+   "label": "Amount USD Book",
+   "precision": "2"
+  },
+  {
+   "fieldname": "current_rate",
+   "fieldtype": "Float",
+   "label": "Current Rate",
+   "precision": "2"
+  },
+  {
+   "fieldname": "margin",
+   "fieldtype": "Float",
+   "label": "Margin",
+   "precision": "2"
+  },
+  {
+   "fieldname": "premium",
+   "fieldtype": "Float",
+   "label": "Premium",
+   "precision": "2"
+  },
+  {
+   "fieldname": "booking_rate",
+   "fieldtype": "Float",
+   "label": "Booking Rate",
+   "precision": "2"
+  },
+  {
+   "fieldname": "column_break_rolfy",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Open\nClose"
+  },
+  {
+   "fieldname": "booking_date",
+   "fieldtype": "Date",
+   "label": "Booking Date"
+  },
+  {
+   "fieldname": "bank",
+   "fieldtype": "Link",
+   "label": "Bank",
+   "options": "Bank"
+  },
+  {
+   "fieldname": "maturity_from",
+   "fieldtype": "Date",
+   "label": "Maturity From"
+  },
+  {
+   "fieldname": "maturity_to",
+   "fieldtype": "Date",
+   "label": "Maturity To"
+  },
+  {
+   "fieldname": "days_of_premium",
+   "fieldtype": "Float",
+   "label": "Days Of Premium",
+   "precision": "1"
+  },
+  {
+   "fieldname": "amount_outstanding",
+   "fieldtype": "Currency",
+   "label": "Amount Outstanding"
+  },
+  {
+   "fieldname": "outstanding_inr",
+   "fieldtype": "Float",
+   "label": "Outstanding INR",
+   "precision": "2"
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Forward Contract",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "underlying_section",
+   "fieldtype": "Section Break",
+   "label": "Underlying"
+  },
+  {
+   "fieldname": "forward_contract_underlying",
+   "fieldtype": "Table",
+   "label": "Forward Contract Underlying",
+   "options": "Forward Contract Underlying"
+  },
+  {
+   "fieldname": "utilization_section",
+   "fieldtype": "Section Break",
+   "label": "Utilization"
+  },
+  {
+   "fieldname": "utilization_payment_entries",
+   "fieldtype": "Table",
+   "label": "Utilization Payment Entries",
+   "options": "Utilization Payment Entries"
+  },
+  {
+   "fieldname": "cancellation_section",
+   "fieldtype": "Section Break",
+   "label": "Cancellation"
+  },
+  {
+   "fieldname": "cancellation_date",
+   "fieldtype": "Date",
+   "label": "Cancellation Date"
+  },
+  {
+   "fieldname": "cancellation_rate",
+   "fieldtype": "Float",
+   "label": "Cancellation Rate",
+   "precision": "2"
+  },
+  {
+   "fieldname": "column_break_naixy",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "cancellation_amount",
+   "fieldtype": "Float",
+   "label": "Cancellation Amount",
+   "precision": "2"
+  },
+  {
+   "fieldname": "bank_account",
+   "fieldtype": "Link",
+   "label": "Bank Account",
+   "options": "Bank"
+  },
+  {
+   "fieldname": "add_cancellation_details",
+   "fieldtype": "Button",
+   "label": "Add Cancellation Details"
+  },
+  {
+   "fieldname": "section_break_w97lx",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "total_cancelled",
+   "fieldtype": "Float",
+   "label": "Total Cancelled",
+   "precision": "2"
+  },
+  {
+   "fieldname": "total_utilization",
+   "fieldtype": "Float",
+   "label": "Total Utilization",
+   "precision": "2"
+  },
+  {
+   "fieldname": "cancellation_details",
+   "fieldtype": "Table",
+   "label": "Cancellation Details",
+   "options": "Cancellation Details"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2024-03-02 15:20:15.094859",
+ "modified_by": "Administrator",
+ "module": "export_contract",
+ "name": "Forward Contract",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
